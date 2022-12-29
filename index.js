@@ -23,7 +23,6 @@ app.get('api/timestamp', (req, res) => {
 
 })
 app.get('/api/timestamp/:date?', (req, res) => {
-  console.log('access on timestamp api')
   const queryDatefromApi = req.params.date;
   if (queryDatefromApi === undefined) {
     let newDate = new Date();
